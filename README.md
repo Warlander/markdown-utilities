@@ -2,6 +2,44 @@
 
 Editor utilities for importing and rendering Markdown (`.md`) files directly in the Unity Editor Inspector.
 
+# Installation
+
+## Via Git URL
+
+Open **Window → Package Manager**, click **+**, and choose **Add package from git URL**.
+
+To install the latest version:
+```
+https://github.com/Warlander/markdown-utilities.git
+```
+
+To install a specific release, append the tag:
+```
+https://github.com/Warlander/markdown-utilities.git#1.0.0
+```
+
+## Via Scoped Registry
+
+Add the Warlogic registry to your `Packages/manifest.json`:
+
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "Warlogic",
+      "url": "https://upm.maciejcyranowicz.com",
+      "scopes": ["com.warlogic"]
+    }
+  ],
+  "dependencies": {
+    "com.warlogic.utils.markdown": "1.0.0"
+  }
+}
+```
+
+Alternatively, open **Window → Package Manager**, click **+**, choose
+**Add package by name**, and enter `com.warlogic.utils.markdown`.
+
 # Setup
 
 No setup required. Once the package is installed, the `MarkdownImporter` ScriptedImporter activates automatically for all `.md` files in the project.
