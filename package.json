@@ -1,7 +1,7 @@
 {
   "name": "com.warlogic.utils.markdown",
   "displayName": "Markdown Utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Editor utilities for importing and rendering Markdown files in the Unity Inspector.",
   "repository": {
     "type": "git",
