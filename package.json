@@ -2,7 +2,16 @@
   "name": "com.warlogic.utils.markdown",
   "displayName": "Markdown Utilities",
   "version": "1.0.1",
+  "unity": "2020.2",
   "description": "Editor utilities for importing and rendering Markdown files in the Unity Inspector.",
+  "author": {
+    "name": "Maciej Cyranowicz",
+    "url": "https://github.com/Warlander"
+  },
+  "license": "MIT",
+  "documentationUrl": "https://github.com/Warlander/markdown-utilities/blob/master/README.md",
+  "changelogUrl": "https://github.com/Warlander/markdown-utilities/blob/master/CHANGELOG.md",
+  "licensesUrl": "https://github.com/Warlander/markdown-utilities/blob/master/LICENSE",
   "repository": {
     "type": "git",
     "url": "https://github.com/Warlander/markdown-utilities.git"
