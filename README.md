@@ -15,7 +15,7 @@ https://github.com/Warlander/markdown-utilities.git
 
 To install a specific release, append the tag:
 ```
-https://github.com/Warlander/markdown-utilities.git#1.0.4
+https://github.com/Warlander/markdown-utilities.git#1.1.0
 ```
 
 ## Via Scoped Registry
@@ -32,7 +32,7 @@ Add the Warlogic registry to your `Packages/manifest.json`:
     }
   ],
   "dependencies": {
-    "com.warlogic.utils.markdown": "1.0.4"
+    "com.warlogic.utils.markdown": "1.1.0"
   }
 }
 ```
@@ -57,3 +57,24 @@ Use the menu item **Assets > Create > Markdown File** to create a new `.md` file
 **Referencing Markdown as a TextAsset**
 
 Imported `.md` files are available as `TextAsset` objects and can be loaded via `Resources.Load`, `AssetDatabase`, or assigned to a serialized `TextAsset` field.
+
+**Parsing and rendering Markdown programmatically**
+
+The parsing and rendering pipeline is fully accessible as a public API:
+
+```csharp
+using Warlogic.Utils.Markdown;
+
+string source = "# Hello\n\nSome **bold** text.";
+
+var lexer       = new MarkdownLexer();
+var tokens      = lexer.Tokenize(source);
+
+var blockParser = new MarkdownBlockParser(new MarkdownInlineParser());
+var doc         = blockParser.Parse(tokens);
+
+var renderer  = new MarkdownVisualElementRenderer();
+VisualElement element = renderer.Render(doc);
+```
+
+Individual pipeline stages — lexer, block parser, inline parser, AST nodes, and renderer — can be used independently or replaced with custom implementations via their respective interfaces (`IMarkdownLexer`, `IMarkdownBlockParser`, `IMarkdownInlineParser`, `IMarkdownVisualElementRenderer`).

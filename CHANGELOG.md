@@ -4,6 +4,11 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-04-14
+
+### Added
+- Public markdown parsing and rendering API: `MarkdownLexer`, `MarkdownBlockParser`, `MarkdownInlineParser`, `MarkdownVisualElementRenderer`, and the full AST node hierarchy are now accessible as standalone classes, allowing custom markdown processing pipelines outside of the inspector.
+
 ## [1.0.4] - 2026-04-08
 
 ### Changed
