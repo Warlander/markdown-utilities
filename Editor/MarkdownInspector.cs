@@ -18,7 +18,9 @@ namespace Warlogic.Utils.Markdown
 
             LexerLine[] tokens = lexer.Tokenize(text);
             DocumentNode ast = blockParser.Parse(tokens);
-            return renderer.Render(ast);
+            VisualElement root = renderer.Render(ast);
+            root.style.paddingTop = 16;
+            return root;
         }
     }
 }
