@@ -16,8 +16,17 @@ namespace Warlogic.Utils.Markdown
             var root = new VisualElement();
             root.style.flexGrow = 1;
 
+            bool first = true;
             foreach (MarkdownNode node in doc.Children)
-                root.Add(RenderBlock(node));
+            {
+                var el = RenderBlock(node);
+                if (first)
+                {
+                    el.style.marginTop = 0;
+                    first = false;
+                }
+                root.Add(el);
+            }
 
             return root;
         }
