@@ -4,7 +4,8 @@
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "Warlogic.Utils.Markdown.Editor"
+        "Warlogic.Utils.Markdown.Editor",
+        "Warlogic.Utils.Markdown"
     ],
     "includePlatforms": ["Editor"],
     "excludePlatforms": [],

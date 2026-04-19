@@ -1,8 +1,8 @@
 {
-    "name": "Warlogic.Utils.Markdown.Editor",
+    "name": "Warlogic.Utils.Markdown",
     "rootNamespace": "",
-    "references": ["Warlogic.Utils.Markdown"],
-    "includePlatforms": ["Editor"],
+    "references": [],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

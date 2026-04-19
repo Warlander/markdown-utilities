@@ -1,6 +1,6 @@
 # Markdown Utilities
 
-Editor utilities for importing and rendering Markdown (`.md`) files directly in the Unity Editor Inspector.
+Utilities for importing and rendering Markdown (`.md`) files in Unity. The parsing and rendering pipeline runs at runtime and in the Editor; editor-specific features (inspector preview, asset importer, file creation menu) are Editor-only.
 
 # Installation
 
@@ -60,7 +60,7 @@ Imported `.md` files are available as `TextAsset` objects and can be loaded via 
 
 **Parsing and rendering Markdown programmatically**
 
-The parsing and rendering pipeline is fully accessible as a public API:
+The parsing and rendering pipeline is fully accessible as a public API and works at both runtime and in the Editor:
 
 ```csharp
 using Warlogic.Utils.Markdown;
