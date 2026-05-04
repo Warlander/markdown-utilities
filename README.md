@@ -18,6 +18,17 @@ To install a specific release, append the tag:
 https://github.com/Warlander/markdown-utilities.git#1.2.0
 ```
 
+## Via Registry Browser
+
+If you have [Registry Browser](https://github.com/Warlander/registry-browser) in the project, make sure you have tracked registry added:
+
+```
+Scope Prefix: com.warlogic
+Registry URL: https://upm.maciejcyranowicz.com
+```
+
+Then open **Window > Warlander > Registry Browser** and add `com.warlogic.utils.markdown` to the project.
+
 ## Via Scoped Registry
 
 Add the Warlogic registry to your `Packages/manifest.json`:
@@ -37,8 +48,7 @@ Add the Warlogic registry to your `Packages/manifest.json`:
 }
 ```
 
-Alternatively, open **Window → Package Manager**, click **+**, choose
-**Add package by name**, and enter `com.warlogic.utils.markdown`.
+Then open **Window > Package Manager** and look for `com.warlogic.utils.markdown`.
 
 # Setup
 
